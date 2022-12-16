@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: main
   media_folder: "public/assets/img"
+  media_library:
+    name: uploads
+
   public_folder: "/assets/img"
   collections:
   - name: "blog"
