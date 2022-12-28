@@ -1,16 +1,16 @@
 ---
 layout: 'base.njk'
 ---
- 
- <div class="list_inner">
+
+ {# <div class="list_inner">
                                         <div class="image">
-                                            {# <img src="{{post.data.image}}" alt="" /> #}
-                                            {# <div class="main" data-img-url="{{post.data.image}}"></div> #}
+                                            <img src="{{post.data.image}}" alt="" />
+                                            <div class="main" data-img-url="{{post.data.image}}"></div>
                                             <a class="shane_tm_full_link" href="#"></a>
                                         </div>
                                         <div class="details">
                                             <h3 class="title"><a href="#">{{ title }}</a></h3>
-                                            {# <p class="date">By <a href="#">{{ post.data.author }}</a> <span>{{post.date | postDate}}</span></p> #}
+                                            <p class="date">By <a href="#">{{ post.data.author }}</a> <span>{{post.date | postDate}}</span></p>
                                             <a href="{{post.url}}">reading more</a>
                                         </div>
                                         <div class="news_hidden_details">
@@ -22,4 +22,289 @@ layout: 'base.njk'
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> #}
+
+    <section class="section">
+            <div class="container">     
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="card border-0 shadow-none">
+                            <div class="card-body">
+                                <div class="mb-5 text-center">
+                                    <p class="text-muted fw-semibold fs-18">{{date | postDate}}</p>
+                                    <h3 class="my-3 fs-28 d-block fw-medium text-dark">{{ title }}</h3>
+                                    <span class="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">Minting</span> 
+                                    <span class="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">NFTs</span>
+                                    <span class="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">Art</span>
+                                    <span class="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">Music</span>
+                                </div>
+                                <img src="{{image}}" alt="" class="img-fluid rounded d-flex mx-auto">
+                                <div class="my-5">
+                                    <p class="text-muted fs-16 mb-4">
+                                        {{ content | safe }}
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="canvas">
+                                            <div class="notepad">
+                                                <div class="cover">
+                                                    <div class="cover-title">
+                                                        {{title}}
+                                                    </div>
+                                                    <div class="cover-bag">
+                                                        Im Proud Of You❤️
+                                                    </div>
+                                                    <style>
+                                                        .cover-title {
+    position: absolute;
+    top: 15%;
+    color: white;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+left: 20%;
+    width: 65%;
+    height: 20%;
+    background-color: #455d75;
+    animation: title 6s infinite ease-in-out;
+                                                        }
+                                                        .cover-bag {
+                                                        
+  position: absolute;
+  top: 43%;
+  left: 23%;
+     color: white;
+      display : flex;
+    justify-content: center;
+    align-items: center;
+  width: 60%;
+  height: 10%;
+  background-color: #455d75;
+  animation: title 6s infinite ease-in-out;
+                                                        }
+                                                    </style>
+                                                </div>
+                                                <div class="page one">
+                                                <p>blog<br />rawy!</p>
+                                                </div>
+                                                <div class="page two"></div>
+                                                <div class="page three"></div>
+                                                <div class="page four"></div>
+                                            </div>
+                                            <div class="pencil">
+                                                <div class="edge"></div>
+                                            </div>
+                                            </div>
+                                </div>
+                                <style>
+                                    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.canvas {
+  width: 100%;
+  height: 15rem;
+
+  margin: auto;
+}
+
+.notepad {
+  position: relative;
+width: 275px;
+    height: 300px;
+        margin: 0 auto;
+  perspective: 1000px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.notepad .cover,
+.notepad .page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.notepad .cover {
+  background: linear-gradient(to right, #24374a 10%, #33495f 10%);
+  transform-origin: left center;
+  transition: 2s;
+  z-index: 20;
+  animation: flip 6s infinite ease-in-out;
+}
+
+
+.notepad .page {
+  background: #eee;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.notepad .page:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient( #eee 0%, #eee 10%, #dfdfdf 10%, #dfdfdf 11%, #eee 11%, #eee 20%, #dfdfdf 20%, #dfdfdf 21%, #eee 21%, #eee 30%, #dfdfdf 30%, #dfdfdf 31%, #eee 31%, #eee 40%, #dfdfdf 40%, #dfdfdf 41%, #eee 41%, #eee 50%, #dfdfdf 50%, #dfdfdf 51%, #eee 51%, #eee 60%, #dfdfdf 60%, #dfdfdf 61%, #eee 61%, #eee 70%, #dfdfdf 70%, #dfdfdf 71%, #eee 71%, #eee 80%, #dfdfdf 80%, #dfdfdf 81%, #eee 81%, #eee 90%, #dfdfdf 90%, #dfdfdf 91%, #eee 91%, #eee 100%);
+}
+
+.page p {
+  position: absolute;
+  top: 18%;
+  left: 28%;
+  z-index: 2;
+  width: 0;
+  height: 135px;
+  margin: 0;
+  font-size: 40px;
+  text-align: left;
+  overflow: hidden;
+  animation: write 6s infinite linear;
+}
+
+.page.one {
+  z-index: 4;
+  animation: one 6s infinite ease-in-out;
+}
+
+.page.one:before {
+  position: absolute;
+}
+
+.page.two {
+  z-index: 3;
+  animation: two 6s infinite ease-in-out;
+}
+
+.page.three {
+  z-index: 2;
+  animation: three 6s infinite ease-in-out;
+}
+
+.page.four {
+  z-index: 1;
+  border-right-width: 0;
+}
+
+.page:before {
+  content: '';
+  position: absolute;
+  right: -7%;
+  width: 7%;
+  height: 10%;
+  border-radius: 0 0 20% 0;
+}
+
+.page.one:before {
+  top: 10%;
+  background-color: #cc881b;
+}
+
+.page.two:before {
+  top: 20%;
+  background-color: #49a84d;
+}
+
+.page.three:before {
+  top: 30%;
+  background-color: #bf351f;
+}
+
+.page.four:before {
+  top: 40%;
+  background-color: #d68384;
+}
+
+@keyframes flip {
+  0%,
+  30%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50%,
+  80% {
+    transform: rotateY(-150deg);
+  }
+  80% {
+    background: linear-gradient(to right, #1a2938 15%, #1a2938 15%);
+  }
+}
+
+@keyframes title {
+  0%,
+  40%,
+  90% {
+    background-color: #455d75;
+  }
+  41%,
+  89% {
+    background-color: transparent;
+  }
+}
+
+
+@keyframes write {
+  0%,
+  52% {
+    width: 0;
+  }
+  57% {
+    width: 20px;
+  }
+  62% {
+    width: 40px;
+  }
+  68% {
+    width: 60px;
+  }
+  72% {
+    width: 80px;
+  }
+  78%,
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes one {
+  0%,
+  30%,
+  100% {
+    width: 100%;
+  }
+  50%,
+  80% {
+    width: 97%;
+  }
+}
+
+@keyframes two {
+  0%,
+  30%,
+  100% {
+    width: 100%;
+  }
+  50%,
+  80% {
+    width: 98%;
+  }
+}
+
+@keyframes three {
+  0%,
+  30%,
+  100% {
+    width: 100%;
+  }
+  50%,
+  80% {
+    width: 99%;
+  }
+}
+                                </style>
+                            </div><!--end card-body-->
+                        </div><!--end card-->
+                    </div> <!--end col-->     
+                </div><!--end row-->
+            </div><!-- end container -->
+        </div></section>

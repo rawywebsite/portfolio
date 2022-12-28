@@ -8,7 +8,7 @@ collections:
     label: "Blog"
     folder: "src/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -16,5 +16,14 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Author Image", name: "imageAuthor", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - name: "clients"
+        label: "Clients"
+        folder: "src/clients"
+        create: true
+        fields:
+          - { label: "Client Image", name: "image", widget: "image" }
+          - { label: "Tags", name: "tags", widget: "list", default: ["images"] }
+          - { label: "Image caption", name: "imageAlt", widget: "string" }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Bootstrap 5 Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta content="Mannatthemes" name="author" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.min.css" rel="stylesheet" />
+    <!-- colors -->
+    <link href="/assets/css/colors/default.css" rel="stylesheet" id="color-opt" />
+    
+    <style> 
+        .progress { position: absolute; height: 2px; display: block;z-index: 9999; width: 100%; background-color: white; border-radius: 2px; background-clip: padding-box; /*margin: 0.5rem 0 1rem 0;*/ overflow: hidden; } 
+        .progress .indeterminate { background-color:black; } 
+        .progress .indeterminate:before { content: ''; position: absolute; background-color: #2C67B1; top: 0; left: 0; bottom: 0; will-change: left, right; -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; } .progress .indeterminate:after { content: ''; position: absolute; background-color: #2C67B1; top: 0; left: 0; bottom: 0; will-change: left, right; -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; -webkit-animation-delay: 1.15s; animation-delay: 1.15s; } @-webkit-keyframes indeterminate { 0% { left: -35%; right: 100%; } 60% { left: 100%; right: -90%; } 100% { left: 100%; right: -90%; } } @keyframes indeterminate { 0% { left: -35%; right: 100%; } 60% { left: 100%; right: -90%; } 100% { left: 100%; right: -90%; } } @-webkit-keyframes indeterminate-short { 0% { left: -200%; right: 100%; } 60% { left: 107%; right: -8%; } 100% { left: 107%; right: -8%; } } @keyframes indeterminate-short { 0% { left: -200%; right: 100%; } 60% { left: 107%; right: -8%; } 100% { left: 107%; right: -8%; } } 
+        .navbar .navbar-nav .nav-item:last-child .nav-link {
+            padding-right: 26px !important;
+        }
+        :root {
+                --font:  'Readex Pro', sans-serif;
+            }
+        </style>
+</head>
+
+<body dir="rtl" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
+    <div class='progress' id='preLoaderbar'>
+        <div class='indeterminate'></div>
+    </div>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                    احمد راوي
+                </a>
+            <!--end navbar-brand-->
+            <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"><i data-feather="menu"></i></span>
+                </a>
+            <!--end navbar-toggler-->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-center mt-lg-0 mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">الرئيسية</a>
+                    </li>
+                    <!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">عني</a>
+                    </li>
+                    <!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">المنشورات</a>
+                    </li>
+                    <!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">تواصل</a>
+                    </li>
+                    <!--end nav-item-->
+                </ul>
+                <!--end navbar-nav-->
+                <a href="/ar" class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">En <img src="/assets/images/484633.png" style="width: 1.8rem" alt=""></a>
+            </div>
+            <!-- end #navbarNav -->
+        </div>
+        <!-- end container -->
+    </nav>
+    <!-- end navbar -->
+
+    
+    {{ content | safe }}
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 border-e-dashed">
+                    <a href="layout-one-1.html">
+                            ahmed rawy logo
+                    </a>
+                    </p>
+                    <ul class="list-unstyled footer-social mb-0 mt-sm-0 mt-3">
+                        <li class="list-inline-item">
+                            <a href="#"> <i class="icon-xs" data-feather="facebook"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"> <i class="icon-xs" data-feather="twitter"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"> <i class="icon-xs" data-feather="github"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"> <i class="icon-xs" data-feather="instagram"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-3">
+                                <a href="#home">Home</a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="#resume">Resume</a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="#blogs">Blogs</a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="#">Terms & condition</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- end top footer -->
+
+
+{# Start Bottom Footer #}
+    <div class="footer-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p> &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>  Created with <i class="las la-heart text-danger"></i> by Mannatthemes</p>
+                </div>
+                <div class="col-sm-6 text-sm-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">- Terms & condition<sup class="text-danger">*</sup></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer alter -->
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon -->
+    <script src="/assets/js/feather.js"></script>
+    <script src="/assets/js/shuffle.min.js"></script>
+    <script src="/assets/js/projects.init.js"></script>
+    <script src="/assets/js/typed.js"></script>
+
+    <script src="/assets/js/app.js"></script>
+    <script>
+        //<![CDATA[
+        document.onreadystatechange = function () {
+                    if (document.readyState === "complete") {
+                        console.log(document.readyState);
+                        document.getElementById("preLoaderbar").style.display = "none";
+                    }
+                }
+        //]]></script>
+</body>
+
+</html>

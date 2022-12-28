@@ -1,86 +1,40 @@
-    <div id="preloader">
-        <div class="loader_line"></div>
-    </div>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                    Ahmed Rawy
+                </a>
+            <!--end navbar-brand-->
+            <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"><i data-feather="menu"></i></span>
+                </a>
+            <!--end navbar-toggler-->
 
-
-    <div class="shane_tm_all_wrap" data-magic-cursor="show" data-color="brown">
-        <div class="shane_tm_settings">
-            <div class="icon">
-                <img class="svg" src="/assets/img/svg/setting.svg" alt="" />
-                <a class="link" href="#"></a>
-            </div>
-            <div class="wrapper">
-                <span class="title">Unlimited Colors</span>
-                <ul class="colors">
-                    <li><a class="blue" href="#"></a></li>
-                    <li><a class="green" href="#"></a></li>
-                    <li><a class="brown" href="#"></a></li>
-                    <li><a class="pink" href="#"></a></li>
-                    <li><a class="orange" href="#"></a></li>
-                    <li class="bl"><a class="black" href="#"></a></li>
-                    <li class="wh"><a class="white" href="#"></a></li>
-                    <li><a class="purple" href="#"></a></li>
-                    <li><a class="sky" href="#"></a></li>
-                    <li><a class="cadetBlue" href="#"></a></li>
-                    <li><a class="crimson" href="#"></a></li>
-                    <li><a class="olive" href="#"></a></li>
-                    <li><a class="red" href="#"></a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-center mt-lg-0 mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
                 </ul>
-                <span class="title">Magic Cursor</span>
-                <ul class="cursor">
-                    <li><a class="showme show" href="#"></a></li>
-                    <li><a class="hide" href="#"><img class="svg" src="/assets/img/svg/arrow.svg" alt="" /></a></li>
-                </ul>
+                <a 
+                href="/ar" 
+                style="
+                {% if ar %}
+                    display: block;
+                {% else %}
+                    display: none;
+                {% endif %}
+                " 
+                class="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">Ar <img src="assets/images/484633.png" style="width: 1.8rem" alt=""></a>
             </div>
         </div>
-
-
-        <div class="shane_tm_mobile_menu">
-            <div class="topbar_inner">
-                <div class="container bigger">
-                    <div class="topbar_in">
-                        <div class="logo">
-                            <a href="#"><img src="/assets/img/logo/new/dark.png" alt="" /></a>
-                        </div>
-                        <div class="my_trigger">
-                            <div class="hamburger hamburger--collapse-r">
-                                <div class="hamburger-box">
-                                    <div class="hamburger-inner"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="container">
-                    <div class="dropdown_inner">
-                        <ul class="anchor_nav">
-                            <li class="current"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="shane_tm_topbar">
-            <div class="topbar_inner">
-                <div class="logo">
-                    <a href="#"><img src="/assets/img/logo/new/dark.png" alt="" /></a>
-                </div>
-                <div class="menu">
-                    <ul class="anchor_nav">
-                        <li class="current"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    </nav>
