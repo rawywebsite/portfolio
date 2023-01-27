@@ -19,7 +19,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "AllImages", name: "allImages", widget: "list", default: ["allimages"], summary: "{{fields.image}}", field: {label: Image, name: image, widget: image} }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["product"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
