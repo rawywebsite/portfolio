@@ -3,9 +3,9 @@ title: My Second Article
 author: Ahmed Rawy
 date: 2021-05-15
 tags: ["post", "featured"]
-image: ../assets/img/news/1.jpg
+image: ../assets/img/blog1.png
 imageAlt: This is a test
-imageAuthor: ../assets/images/imageauthor.png
+imageAuthor: ../assets/images/imageauthor.webp
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 ---
 

@@ -1,24 +1,16 @@
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-image shadow" style="position: relative;">
-                        <img src="{{post.data.image}}" alt="{{post.data.image}}" class="img-fluid image-post rounded-top">
-                        <div class="card-body">
-                            <a href="{{ post.url }}" class="fs-20 my-0 d-block fw-medium">{{ post.data.title }}</a>
-                            <hr class="hr-dashed">
-                            <div class="d-flex justify-content-between">
-                                <div class="meta-box">
-                                    <div class="media">
-                                        <img src="{{ post.data.imageAuthor }}" alt="" class="thumb-sm rounded-circle me-2 align-self-center">
-                                        <div class="media-body align-self-center text-truncate">
-                                            <h6 class="m-0 fs-14">{{ post.data.author }}</h6>
-                                            <p class="mb-0 fs-12 text-muted">{{post.date | postDate}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="align-self-center">
-                                    <a href="{{ post.url }}" class="fs-14">Read more <i class="ti ti-arrow-right align-self-center"></i></a>
-                                </div>
-                            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="article-style-03">
+                    <div class="thumb">
+                        <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}">
+                    </div>
+                    <div class="content">
+                        <span class="date">{{post.date | postDate}}</span>
+                        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                        <p>{{ post.data.description }}</p>
+                        <div class="btn-wrapper">
+                            <a href="{{ post.url }}" class="btn">أقرء المزيد</a>
                         </div>
                     </div>
                 </div>
+            </div>
 

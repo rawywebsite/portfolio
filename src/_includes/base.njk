@@ -2,26 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium Bootstrap 5 Template" />
-    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
-    <meta content="Mannatthemes" name="author" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/assets/css/style.min.css" rel="stylesheet" />
-    <!-- colors -->
-    <link href="/assets/css/colors/default.css" rel="stylesheet" id="color-opt" />
-    
-    <style> 
-        .progress { position: absolute; height: 2px; display: block;z-index: 9999; width: 100%; background-color: white; border-radius: 2px; background-clip: padding-box; /*margin: 0.5rem 0 1rem 0;*/ overflow: hidden; } 
-        .progress .indeterminate { background-color:black; } 
-        .progress .indeterminate:before { content: ''; position: absolute; background-color: #2C67B1; top: 0; left: 0; bottom: 0; will-change: left, right; -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; } .progress .indeterminate:after { content: ''; position: absolute; background-color: #2C67B1; top: 0; left: 0; bottom: 0; will-change: left, right; -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; -webkit-animation-delay: 1.15s; animation-delay: 1.15s; } @-webkit-keyframes indeterminate { 0% { left: -35%; right: 100%; } 60% { left: 100%; right: -90%; } 100% { left: 100%; right: -90%; } } @keyframes indeterminate { 0% { left: -35%; right: 100%; } 60% { left: 100%; right: -90%; } 100% { left: 100%; right: -90%; } } @-webkit-keyframes indeterminate-short { 0% { left: -200%; right: 100%; } 60% { left: 107%; right: -8%; } 100% { left: 107%; right: -8%; } } @keyframes indeterminate-short { 0% { left: -200%; right: 100%; } 60% { left: 107%; right: -8%; } 100% { left: 107%; right: -8%; } } 
-        </style>
+    <!-- favicon -->
+    <link rel=icon href=favicon.png sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <!-- Themify icon -->
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+    <!-- Cookie -->
+    <link rel="stylesheet" href="assets/css/cookiealert.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+<body>
 
     <div class='progress' id='preLoaderbar'>
         <div class='indeterminate'></div>
@@ -31,15 +43,40 @@
     {{ content | safe }}
     {% include 'footer.njk' %}
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <!-- popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- waypoint -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- counterup -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- imageloaded -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
 
-    <!-- feather icon -->
-    <script src="/assets/js/feather.js"></script>
-    <script src="/assets/js/shuffle.min.js"></script>
-    <script src="/assets/js/projects.init.js"></script>
-    <script src="/assets/js/typed.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
 
-    <script src="/assets/js/app.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <!-- slick -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Datepicker -->
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/datepicker-en.js"></script>
+    <!-- Cookie -->
+    <script src="assets/js/cookiealert.js"></script>
+    
+     <!-- main js -->
+    <script src="assets/js/main.js"></script>
     <script>
         //<![CDATA[
         document.onreadystatechange = function () {
