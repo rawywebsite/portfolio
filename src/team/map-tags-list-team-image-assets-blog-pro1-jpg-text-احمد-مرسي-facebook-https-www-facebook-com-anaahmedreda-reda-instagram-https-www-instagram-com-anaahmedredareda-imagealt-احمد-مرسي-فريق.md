@@ -2,8 +2,8 @@
 image: /assets/blog/pro1.jpg
 tags:
   - team
-imageAlt: احمد مرسي - فريق إلياس لتصميم ألازياء
-text: احمد مرسي
-facebook: https://www.facebook.com/anaahmedreda.reda/
-instagram: https://www.instagram.com/anaahmedredareda/
+imageAlt: ابراهيم جمال - فريق إلياس لتصميم الأزياء
+text: "ابراهيم جمال "
+facebook: https://www.facebook.com/mx.mx.1088/
+instagram: https://www.instagram.com/ibrahimgamaal__/
 ---
