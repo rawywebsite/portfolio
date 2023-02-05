@@ -2,6 +2,565 @@
 layout: 'base.njk'
 ---
 
-<div>
-    {{ content | safe }}
-</div>
+<head>
+     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="إلياس اختيارك ألافضل لتصميم الأزياء - بدل رجالي كلاسيك وفورمال "
+    />
+    <meta
+      name="keywords"
+      content="الياس بدل, إلياس فاشون, موقع إلياس لتصميم الأزياء, تصميم أزياء, فاشون, بدل"
+    />
+    <meta name="theme-color" content="#00000" />
+    <meta name="secound-theme-color" content="#FF2D55" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-title" content="إلياس ~ الصفحة الرئيسية" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="upload/fav_icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="upload/fav_icon.png" />
+    <meta name="application-name" content="إلياس ~ الصفحة الرئيسية" />
+    <meta name="title" content="إلياس ~ الصفحة الرئيسية" />
+    <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="إلياس ~ الصفحة الرئيسية" />
+    <meta property="og:title" content="إلياس ~ الصفحة الرئيسية" />
+    <meta property="og:description" content="إلياس ~ الصفحة الرئيسية" />
+    <meta property="og:url" content="https://www.tedxsha.com" />
+    <meta property="og:image" content="https://i.ibb.co/sH3Pswd/tedxsha.png/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TEDxSHA" />
+    <meta name="twitter:creator" content="@TEDxSHA" />
+    <meta name="twitter:title" content="@TEDxSHA" />
+    <meta name="twitter:description" content="الصفحة الرئيسية لموقع إلياس" />
+    <meta name="twitter:image:src" content="upload/fav_icon.png" />
+    <meta name="note" content="إلياس" />
+    <meta name="subject" content="الصفحة الرئيسية لموقع إلياس فاشون" />
+    <meta name="identifier-URL" content="https://www.tedxsha.com" />
+    <meta name="linkage" content="https://www.tedxsha.com" />
+    <meta name="distribution" content="global" />
+    <meta name="classification" content="All" />
+    <meta name="author" content="إلياس" />
+    <meta name="owner" content="https://www.tedxsha.com" />
+    <meta name="copyright" content="https://www.tedxsha.com" />
+    <meta name="web_author" content="Ahmed Waled" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="operator" content="إلياس" />
+    <meta name="contactOrganization" content="https://www.tedxsha.com" />
+    <meta name="contactStreetAddress1" content="عباس العقاد" />
+    <meta name="contactCity" content="cairo" />
+    <meta name="contactCountry" content="Egypt" />
+    <meta name="contactPhoneNumber" content="+201113940995" />
+    <meta name="contactNetworkAddress" content="https://www.tedxsha.com" />
+    <meta name="robots" content="index, follow" />
+    <meta name="msapplication-starturl" content="https://www.tedxsha.com" />
+    <meta name="msapplication-tooltip" content="موقع إالياس" />
+    <meta name="DC.Creator" content="Developed By Ahmed Waled" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="HandheldFriendly" content="True" />
+    <title>{{ title }}</title>
+    <!-- favicon -->
+    <link rel=icon href=favicon.png sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="/assets/css/linearicons.css">
+    <!-- Themify icon -->
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="/assets/css/datepicker.min.css">
+    <!-- Cookie -->
+    <link rel="stylesheet" href="/assets/css/cookiealert.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/ss.css">
+</head>
+
+<!-- navbar area starts -->
+<nav class="navbar navbar-area navbar-expand-lg nav-style-02 nav-absolute">
+    <div class="container-fluid nav-container">
+        <div class="responsive-mobile-menu">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bizcoxx_main_menu" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
+            <ul dir="rtl" style="text-align: left;" class="navbar-nav">
+                <li class="menu-item-has-children current-menu-item">
+                    <a href="#">الرئيسية</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">عن الياس</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"> خدماتنا</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">  الفريق</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"> معرض الصور والفديوهات</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"> الياس والنجوم</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">مقالات تهمك</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">تواصل معنا</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right-content">
+            <div class="logo-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo/logo.png" alt="logo">
+                    <h4>robarto <br>ferracini</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar area end -->
+
+<!-- Instagram Starts -->
+{# <section class="section instagram-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 px-0">
+                <div class="instagram-slider owl-carousel">
+                    {% if imageBlack %}
+                        <div class="single-slide slide-1" style="background-image: url({{ imageBlack }});"></div>
+                    {% endif %}
+                    {% if imageBlue %}
+                        <div class="single-slide slide-1" style="background-image: url({{ imageBlue }});"></div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section> #}
+<!-- Instagram End -->
+
+<div class = "container section">
+      <div dir="rtl" class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+                {% if imageBlack %}
+                        <img src = "{{ imageBlack }}" alt = "shoe image">
+                {% endif %}
+              <img src = "/assets/img/shoe_2.jpg" alt = "shoe image">
+              <img src = "/assets/img/shoe_3.jpg" alt = "shoe image">
+              <img src = "/assets/img/shoe_4.jpg" alt = "shoe image">
+            </div>
+          </div>
+          <div class = "img-select">
+            {% if imageBlack %}
+                <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                        <img src = "{{ imageBlack }}" alt = "shoe image">
+                    </a>
+                </div>
+            {% endif %}
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "/assets/img/shoe_2.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "/assets/img/shoe_3.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "/assets/img/shoe_4.jpg" alt = "shoe image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">{{ title }}</h2>
+          <a class = "product-link">تواصل الأن علي 01127780686</a>
+          <div class = "product-price">
+            <p class = "new-price">السعر: <span>50</span> جنيه</p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>عن ألسلعة: </h2>
+            {{ content | safe }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.card {
+    border: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(/assets/img/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+    </style>
+
+    <script>
+        const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${(imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+    </script>
+
+
+<!-- Discount Starts -->
+<section dir="rtl" class="discount-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 fadeInLeft">
+                <div class="discount-content">
+                    <div class="section-title">
+                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                    </div>
+                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
+                    <div class="btn-margin-top mb-5 mb-lg-0">
+                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fadeInRight">
+                <div class="discount-image">
+                    <div class="d-flex justify-content-between">
+                        <div class="image-bg image-1" style="background-image: url({{ imageCol }});"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount End -->
+
+<!-- Discount Starts -->
+<section dir="rtl" class="discount-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 fadeInLeft">
+                <div class="discount-content">
+                    <div class="section-title">
+                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                    </div>
+                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
+                    <div class="btn-margin-top mb-5 mb-lg-0">
+                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fadeInRight">
+                <div class="discount-image">
+                    <div class="d-flex justify-content-between">
+                        <div class="image-bg image-1" style="background-image: url(/assets/img/test3.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount End -->
+
+<!-- Discount Starts -->
+<section dir="rtl" class="discount-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 fadeInLeft">
+                <div class="discount-content">
+                    <div class="section-title">
+                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                    </div>
+                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
+                    <div class="btn-margin-top mb-5 mb-lg-0">
+                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fadeInRight">
+                <div class="discount-image">
+                    <div class="d-flex justify-content-between">
+                        <div class="image-bg image-1" style="background-image: url(/assets/img/test4.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount End -->
+
+<!-- Discount Starts -->
+<section dir="rtl" class="discount-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 fadeInLeft">
+                <div class="discount-content">
+                    <div class="section-title">
+                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                    </div>
+                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
+                    <div class="btn-margin-top mb-5 mb-lg-0">
+                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fadeInRight">
+                <div class="discount-image">
+                    <div class="d-flex justify-content-between">
+                        <div class="image-bg image-1" style="background-image: url(/assets/img/test6.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount End -->
+
+<!-- Discount Starts -->
+<section dir="rtl" class="discount-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 fadeInLeft">
+                <div class="discount-content">
+                    <div class="section-title">
+                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                    </div>
+                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
+                    <div class="btn-margin-top mb-5 mb-lg-0">
+                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fadeInRight">
+                <div class="discount-image">
+                    <div class="d-flex justify-content-between">
+                        <div class="image-bg image-1" style="background-image: url(/assets/img/test2.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount End -->
