@@ -4,6 +4,6 @@ tags:
   - team
 imageAlt: أحمد مرسي - فريق إلياس لتصميم الأزياء
 text: أحمد مرسي
-facebook: ششششششششش
-instagram: شش
+facebook: https://www.facebook.com/anaahmedreda.reda/
+instagram: https://www.instagram.com/anaahmedredareda/
 ---
