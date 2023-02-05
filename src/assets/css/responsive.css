@@ -317,7 +317,7 @@
         height: 100vh
     }
     .banner-area .banner-left .banner-image {
-        width: 35rem;
+        width: auto;
         height: 100vh
     }
     .banner-area .banner-right {

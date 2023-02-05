@@ -182,6 +182,10 @@ code {
     color: #faa603;
 }
 
+.section {
+    margin-top: 5rem;
+}
+
 .dark-bg {
     background-color: #111d5c;
 }
@@ -4766,6 +4770,7 @@ input.common-input:focus {
     background-size: cover;
     width: 100%;
     height: 450px;
+    position: relative;
 }
 
 .instagram-area .slide-1 {
