@@ -44,6 +44,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["product"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
       - { label: "Blue Image", name: "imageBlue", widget: "image" }
+      - { label: "Formal Image", name: "imageCol1", widget: "image" }
+      - { label: "Classic Image", name: "imageCol2", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "blog"
