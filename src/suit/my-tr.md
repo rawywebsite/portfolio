@@ -2,7 +2,7 @@
 title: My First Article
 place: مدينة نصر
 price: 1500
-tags: ["product", "featuredProduct"]
+tags: "suits"
 imageBlack: /assets/img/pro1.jpg
 imageAlt: This is a test
 imageBlue: /assets/img/pro4.jpg

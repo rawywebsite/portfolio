@@ -68,499 +68,371 @@ layout: 'base.njk'
     <title>{{ title }}</title>
     <!-- favicon -->
     <link rel=icon href=favicon.png sizes="20x20" type="image/png">
-    <!-- animate -->
-    <link rel="stylesheet" href="/assets/css/animate.css">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <!-- flaticon -->
-    <link rel="stylesheet" href="/assets/css/linearicons.css">
-    <!-- Themify icon -->
-    <link rel="stylesheet" href="/assets/css/themify-icons.css">
-    <!-- Datepicker -->
-    <link rel="stylesheet" href="/assets/css/datepicker.min.css">
-    <!-- Cookie -->
-    <link rel="stylesheet" href="/assets/css/cookiealert.css">
-    <!-- Main Stylesheet -->
+<!-- ======= All CSS Plugins here ======== -->
+    <link rel="stylesheet" href="/assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+
+    <!-- Custom Style CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- responsive Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/responsive.css">
-    <link rel="stylesheet" href="/assets/css/ss.css">
 </head>
 
-<!-- navbar area starts -->
-<nav class="navbar navbar-area navbar-expand-lg nav-style-02 nav-absolute">
-    <div class="container-fluid nav-container">
-        <div class="responsive-mobile-menu">
-           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bizcoxx_main_menu" 
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
 
-        <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
-            <ul dir="rtl" style="text-align: left;" class="navbar-nav">
-                <li class="menu-item-has-children current-menu-item">
-                    <a href="#">الرئيسية</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">عن الياس</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#"> خدماتنا</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">  الفريق</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#"> معرض الصور والفديوهات</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#"> الياس والنجوم</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">مقالات تهمك</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">تواصل معنا</a>
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="nav-right-content">
-            <div class="logo-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo/logo.png" alt="logo">
-                    <h4>robarto <br>ferracini</h4>
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- navbar area end -->
-
-<!-- Instagram Starts -->
-{# <section class="section instagram-area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 px-0">
-                <div class="instagram-slider owl-carousel">
-                    {% if imageBlack %}
-                        <div class="single-slide slide-1" style="background-image: url({{ imageBlack }});"></div>
-                    {% endif %}
-                    {% if imageBlue %}
-                        <div class="single-slide slide-1" style="background-image: url({{ imageBlue }});"></div>
-                    {% endif %}
+    <!-- Start header area -->
+    <header class="header__section color-scheme-2">
+        <div class="main__header header__sticky">
+            <div class="container-fluid">
+                <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                            <span class="visually-hidden">Menu Open</span>
+                        </a>
+                    </div>
+                    <div dir="rtl" class="header__menu d-none d-lg-block">
+                        <nav class="header__menu--navigation">
+                            <ul class="d-flex">
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="index.html">الرئيسية 
+                                    </a>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="about.html">عن إلياس</a>
+                                </li>
+                                <li class="header__menu--items mega__menu--items">
+                                    <a class="header__menu--link" href="shop.html">خدماتنا 
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                            <path  d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__mega--menu d-flex">
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle">Column One</span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop.html">Shop Left Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid.html">Shop Grid</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.html">Shop Grid List</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.html">Shop List</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle">Column Two</span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.html">Product Details</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-video.html">Video Product</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.html">Variable Product</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-left-sidebar.html">Product Left Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.html">Product Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle">Column Three</span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account.html">My Account</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account-2.html">My Account 2</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="404.html">404 Page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="login.html">Login Page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="faq.html">Faq Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__mega--menu__li">
+                                            <span class="header__mega--subtitle">Column Four</span>
+                                            <ul class="header__mega--sub__menu">
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.html">Compare Pages</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout.html">Checkout page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout-2.html">Checkout Style 2</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout-3.html">Checkout Style 3</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout-4.html">Checkout Style 4</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="blog.html">الفريق 
+                                    </a>
+                                </li>
+                                <li class="header__menu--items d-none d-xl-block">
+                                    <a class="header__menu--link" href="shop.html">معرض الصور والفديوهات </a>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">إلياس والنجوم 
+                                        <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                            <path  d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="about.html" class="header__sub--menu__link">About Us</a></li>
+                                        <li class="header__sub--menu__items"><a href="contact.html" class="header__sub--menu__link">Contact Us</a></li>
+                                        <li class="header__sub--menu__items"><a href="cart.html" class="header__sub--menu__link">Cart Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="portfolio.html" class="header__sub--menu__link">Portfolio Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="wishlist.html" class="header__sub--menu__link">Wishlist Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="login.html" class="header__sub--menu__link">Login Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="404.html" class="header__sub--menu__link">Error Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items d-none d-xl-block">
+                                    <a class="header__menu--link" href="shop.html">مقالات تهمك  </a>
+                                </li>
+                                <li class="header__menu--items mr-3 d-none d-xl-block">
+                                    <a class="header__menu--link" href="shop.html"> تواصل معنا  </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html"><img style="width: 12rem;" src="/assets/img/logo.jpg" alt=""></a></h1>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section> #}
-<!-- Instagram End -->
 
-<div class = "container section">
-      <div dir="rtl" class = "card">
-        <!-- card left -->
-        <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-                {% if imageBlack %}
-                        <img src = "{{ imageBlack }}" alt = "shoe image">
-                {% endif %}
-              <img src = "/assets/img/shoe_2.jpg" alt = "shoe image">
-              <img src = "/assets/img/shoe_3.jpg" alt = "shoe image">
-              <img src = "/assets/img/shoe_4.jpg" alt = "shoe image">
-            </div>
-          </div>
-          <div class = "img-select">
-            {% if imageBlack %}
-                <div class = "img-item">
-                    <a href = "#" data-id = "1">
-                        <img src = "{{ imageBlack }}" alt = "shoe image">
+        <!-- Start Offcanvas header menu -->
+        <div class="offcanvas__header color-scheme-2">
+            <div class="offcanvas__inner">
+                <div class="offcanvas__logo">
+                    <a class="offcanvas__logo_link" href="index.html">
+                        <img src="/assets/img/logo/nav-log2.png" alt="Grocee Logo" width="158" height="36">
                     </a>
+                    <button class="offcanvas__close--btn" data-offcanvas>close</button>
                 </div>
-            {% endif %}
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img src = "/assets/img/shoe_2.jpg" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img src = "/assets/img/shoe_3.jpg" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "4">
-                <img src = "/assets/img/shoe_4.jpg" alt = "shoe image">
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- card right -->
-        <div class = "product-content">
-          <h2 class = "product-title">{{ title }}</h2>
-          <a class = "product-link">تواصل الأن علي 01127780686</a>
-          <div class = "product-price">
-            <p class = "new-price">السعر: <span>50</span> جنيه</p>
-          </div>
-
-          <div class = "product-detail">
-            <h2>عن ألسلعة: </h2>
-            {{ content | safe }}
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
-.card {
-    border: 0;
-}
-img{
-    width: 100%;
-    display: block;
-}
-.img-display{
-    overflow: hidden;
-}
-.img-showcase{
-    display: flex;
-    width: 100%;
-    transition: all 0.5s ease;
-}
-.img-showcase img{
-    min-width: 100%;
-}
-.img-select{
-    display: flex;
-}
-.img-item{
-    margin: 0.3rem;
-}
-.img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3){
-    margin-right: 0;
-}
-.img-item:hover{
-    opacity: 0.8;
-}
-.product-content{
-    padding: 2rem 1rem;
-}
-.product-title{
-    font-size: 3rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    position: relative;
-    color: #12263a;
-    margin: 1rem 0;
-}
-.product-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    background: #256eff;
-    color: #fff;
-    padding: 0 0.3rem;
-    transition: all 0.5s ease;
-}
-.product-link:hover{
-    opacity: 0.9;
-}
-.product-rating{
-    color: #ffc107;
-}
-.product-rating span{
-    font-weight: 600;
-    color: #252525;
-}
-.product-price{
-    margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-}
-.product-price span{
-    font-weight: 400;
-}
-.last-price span{
-    color: #f64749;
-    text-decoration: line-through;
-}
-.new-price span{
-    color: #256eff;
-}
-.product-detail h2{
-    text-transform: capitalize;
-    color: #12263a;
-    padding-bottom: 0.6rem;
-}
-.product-detail p{
-    font-size: 0.9rem;
-    padding: 0.3rem;
-    opacity: 0.8;
-}
-.product-detail ul{
-    margin: 1rem 0;
-    font-size: 0.9rem;
-}
-.product-detail ul li{
-    margin: 0;
-    list-style: none;
-    background: url(/assets/img/checked.png) left center no-repeat;
-    background-size: 18px;
-    padding-left: 1.7rem;
-    margin: 0.4rem 0;
-    font-weight: 600;
-    opacity: 0.9;
-}
-.product-detail ul li span{
-    font-weight: 400;
-}
-.purchase-info{
-    margin: 1.5rem 0;
-}
-.purchase-info input,
-.purchase-info .btn{
-    border: 1.5px solid #ddd;
-    border-radius: 25px;
-    text-align: center;
-    padding: 0.45rem 0.8rem;
-    outline: 0;
-    margin-right: 0.2rem;
-    margin-bottom: 1rem;
-}
-.purchase-info input{
-    width: 60px;
-}
-.purchase-info .btn{
-    cursor: pointer;
-    color: #fff;
-}
-.purchase-info .btn:first-of-type{
-    background: #256eff;
-}
-.purchase-info .btn:last-of-type{
-    background: #f64749;
-}
-.purchase-info .btn:hover{
-    opacity: 0.9;
-}
-.social-links{
-    display: flex;
-    align-items: center;
-}
-.social-links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    color: #000;
-    border: 1px solid #000;
-    margin: 0 0.2rem;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: all 0.5s ease;
-}
-.social-links a:hover{
-    background: #000;
-    border-color: transparent;
-    color: #fff;
-}
-
-@media screen and (min-width: 992px){
-    .card{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
-    }
-    .card-wrapper{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .product-imgs{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .product-content{
-        padding-top: 0;
-    }
-}
-    </style>
-
-    <script>
-        const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
-
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
-
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${(imgId - 1) * displayWidth}px)`;
-}
-
-window.addEventListener('resize', slideImage);
-    </script>
-
-
-<!-- Discount Starts -->
-<section dir="rtl" class="discount-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 fadeInLeft">
-                <div class="discount-content">
-                    <div class="section-title">
-                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
+                <nav class="offcanvas__menu">
+                    <ul class="offcanvas__menu_ul">
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="index.html">Home</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="index.html" class="offcanvas__sub_menu_item">Home One</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-2.html" class="offcanvas__sub_menu_item">Home Two</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-3.html" class="offcanvas__sub_menu_item">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">Shop</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column One</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop.html">Shop Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid.html">Shop Grid</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid-list.html">Shop Grid List</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-list.html">Shop List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Two</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.html">Product Details</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-video.html">Video Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.html">Variable Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-left-sidebar.html">Product Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-gallery.html">Product Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account.html">My Account</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account-2.html">My Account 2</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="404.html">404 Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="login.html">Login Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="faq.html">Faq Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="compare.html">Compare Pages</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout.html">Checkout page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout-2.html">Checkout Style 2</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout-3.html">Checkout Style 3</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout-4.html">Checkout Style 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">Blog</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="blog.html" class="offcanvas__sub_menu_item">Blog Grid</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-details.html" class="offcanvas__sub_menu_item">Blog Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-left-sidebar.html" class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.html" class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">Pages</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="about.html" class="offcanvas__sub_menu_item">About Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="contact.html" class="offcanvas__sub_menu_item">Contact Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="cart.html" class="offcanvas__sub_menu_item">Cart Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="portfolio.html" class="offcanvas__sub_menu_item">Portfolio Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="wishlist.html" class="offcanvas__sub_menu_item">Wishlist Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="login.html" class="offcanvas__sub_menu_item">Login Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="404.html" class="offcanvas__sub_menu_item">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">About</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="offcanvas__account--items">
+                        <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
+                        <span class="offcanvas__account--items__icon"> 
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
+                            </span>
+                        <span class="offcanvas__account--items__label">Login / Register</span>
+                        </a>
                     </div>
-                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
-                    <div class="btn-margin-top mb-5 mb-lg-0">
-                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+                    <div class="language__currency">
+                        <ul class="d-flex align-items-center">
+                            <li class="language__currency--list">
+                                <a class="offcanvas__language--switcher" href="#">
+                                    <img class="language__switcher--icon__img" src="/assets/img/icon/language-icon.png" alt="currency">
+                                    <span>English</span> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
+                                        <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas__dropdown--language">
+                                    <ul>
+                                        <li class="language__items"><a class="language__text" href="#">France</a></li>
+                                        <li class="language__items"><a class="language__text" href="#">Russia</a></li>
+                                        <li class="language__items"><a class="language__text" href="#">Spanish</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="language__currency--list">
+                                <a class="offcanvas__account--currency__menu" href="#">
+                                    <img src="/assets/img/icon/usd-icon.png" alt="currency">
+                                    <span>$ US Dollar</span> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
+                                        <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas__account--currency__submenu">
+                                    <ul>
+                                        <li class="currency__items"><a class="currency__text" href="#">CAD</a></li>
+                                        <li class="currency__items"><a class="currency__text" href="#">CNY</a></li>
+                                        <li class="currency__items"><a class="currency__text" href="#">EUR</a></li>
+                                        <li class="currency__items"><a class="currency__text" href="#">GBP</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-6 offset-lg-1 fadeInRight">
-                <div class="discount-image">
-                    <div class="d-flex justify-content-between">
-                        <div class="image-bg image-1" style="background-image: url({{ imageCol }});"></div>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
-</section>
-<!-- Discount End -->
+        <!-- End Offcanvas header menu -->
+    </header>
+    <!-- End header area -->
 
-<!-- Discount Starts -->
-<section dir="rtl" class="discount-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 fadeInLeft">
-                <div class="discount-content">
-                    <div class="section-title">
-                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
-                    </div>
-                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
-                    <div class="btn-margin-top mb-5 mb-lg-0">
-                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
+<!-- Start product details section -->
+        <section class="product__details--section">
+            <div class="container">
+                <div dir="rtl" class="row row-cols-lg-2 row-cols-md-2">
+                    
+                    <div class="col">
+                        <div class="product__details--media">
+                            <div class="product__media--preview  swiper">
+                                <div class="swiper-wrapper">
+                                    {% if imageBlack %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--preview__items">
+                                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ imageBlack }}"><img class="product__media--preview__items--img" src="{{ imageBlack }}" alt="{{ imageAlt }}"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if imageBlue %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--preview__items">
+                                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ imageBlue }}"><img class="product__media--preview__items--img" src="{{ imageBlue }}" alt="{{ imageAlt }}"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="product__media--nav swiper">
+                                <div class="swiper-wrapper">
+                                    {% if imageBlack %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--nav__items">
+                                                <img class="product__media--nav__items--img" src="{{ imageBlack }}" alt="{{ imageAlt }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if imageBlue %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--nav__items">
+                                                <img class="product__media--nav__items--img" src="{{ imageBlue }}" alt="{{ imageAlt }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="swiper__nav--btn swiper-button-next"></div>
+                                <div class="swiper__nav--btn swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col">
+                        <div dir='rtl' class="product__details--info">
+                            <form action="#">
+                                <h2 class="product__details--info__title mb-15">{{ title }}</h2>
+                                <div class="product__details--info__price mb-10">
+                                    <span class="current__price">{{ price }}</span>
+                                </div>
+                                <p class="product__details--info__desc mb-15">{{ content | safe }}</p>
+                                <span class="product__badge--items sale">متواجد في فرع : مدينة نصر</span>
+                                <span class="product__badge--items sale">01125656778</span>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 offset-lg-1 fadeInRight">
-                <div class="discount-image">
-                    <div class="d-flex justify-content-between">
-                        <div class="image-bg image-1" style="background-image: url(/assets/img/test3.png"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Discount End -->
+        </section>
+        <!-- End product details section -->
 
-<!-- Discount Starts -->
-<section dir="rtl" class="discount-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 fadeInLeft">
-                <div class="discount-content">
-                    <div class="section-title">
-                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
-                    </div>
-                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
-                    <div class="btn-margin-top mb-5 mb-lg-0">
-                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 offset-lg-1 fadeInRight">
-                <div class="discount-image">
-                    <div class="d-flex justify-content-between">
-                        <div class="image-bg image-1" style="background-image: url(/assets/img/test4.png"></div>
+<!-- Start shop cards section -->
+        <section class="shop__card--section section--padding color-scheme-2">
+            <div class="container-fluid">
+                <div class="shop__card--section__inner">
+                    <div dir="rtl" class="row row-cols-md-2 row-cols-1 align-items-center">
+                        <div class="col col-sm-order">
+                            <div class="shop__card--content">
+                                <h2 class="shop__card--content__maintitle mb-12">البدلة في الشكل الكلاسيك
+                                </h2>
+                                <p class="shop__card--content__desc">عشان احنا معاك دايما في اختياراتك بنوريك شكل البدلة وهي كلاسيك</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="/assets/img/test6.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Discount End -->
+        </section>
+<!-- End shop cards section -->
 
-<!-- Discount Starts -->
-<section dir="rtl" class="discount-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 fadeInLeft">
-                <div class="discount-content">
-                    <div class="section-title">
-                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
-                    </div>
-                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
-                    <div class="btn-margin-top mb-5 mb-lg-0">
-                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 offset-lg-1 fadeInRight">
-                <div class="discount-image">
-                    <div class="d-flex justify-content-between">
-                        <div class="image-bg image-1" style="background-image: url(/assets/img/test6.png"></div>
+<!-- Start shop cards section -->
+        <section class="shop__card--section color-scheme-2">
+            <div class="container-fluid">
+                <div class="shop__card--section__inner">
+                    <div class="row row-cols-md-2 row-cols-1 align-items-center">
+                        <div class="col col-sm-order">
+                            <div class="shop__card--content">
+                                <h2 class="shop__card--content__maintitle mb-12">البدلة في الشكل الكلاسيك
+                                </h2>
+                                <p class="shop__card--content__desc">عشان احنا معاك دايما في اختياراتك بنوريك شكل البدلة وهي كلاسيك</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="/assets/img/test6.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Discount End -->
-
-<!-- Discount Starts -->
-<section dir="rtl" class="discount-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 fadeInLeft">
-                <div class="discount-content">
-                    <div class="section-title">
-                        <h2>نحرص علي تقديم أفضل تصميم يناسبك بأفضل سعر وأكثر عروض</h2>
-                    </div>
-                    <p>مع خبرة دامت أكثر من خمس اعوام في تصميم الازياء نحن نقدم لك تصميم جميع ملابسك بالشكل الذي تريده والمتابعة معك في كل الاوقات واحترام جميع تعديلاتك</p>
-                    <div class="btn-margin-top mb-5 mb-lg-0">
-                        <a href="#" class="template-btn2">view items <span>&rharu;</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 offset-lg-1 fadeInRight">
-                <div class="discount-image">
-                    <div class="d-flex justify-content-between">
-                        <div class="image-bg image-1" style="background-image: url(/assets/img/test2.png"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Discount End -->
+        </section>
+<!-- End shop cards section -->

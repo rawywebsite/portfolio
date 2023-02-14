@@ -73,7 +73,7 @@ layout: 'base.njk'
     <link rel="stylesheet" href="/assets/css/plugins/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/plugins/glightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
     <!-- Plugin css -->
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
 
@@ -331,46 +331,50 @@ layout: 'base.njk'
     </header>
     <!-- End header area -->
 
-<!-- Start team members section -->
-        <section class="team__section section--padding">
-            <div class="container">
-                <div class="section__heading text-center mb-50">
-                    <h2 class="section__heading--maintitle">Our Team</h2>
-                </div>
-                <div class="team__container">
-                    <div class="row">
-                        {%- for member in collections.team | reverse -%}
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col">
-                                <div class="team__items text-center">
-                                    <div class="team__thumb">
-                                        <img class="team__thumb--img" src="{{ member.data.image }}" alt="{{ member.data.imageAlt }}">
-                                    </div>
-                                    <div class="team__content ">
-                                        <h3 class="team__content--title">{{ member.data.text }}</h3>
-                                        <ul class="team__social d-flex justify-content-center align-items-center">
-                                            <li class="team__social--list">
-                                                <a class="team__social--icon" target="_blank" href="{{ member.data.facebook }}">
-                                                    <svg  xmlns="http://www.w3.org/2000/svg" width="7.667" height="16.524" viewBox="0 0 7.667 16.524">
-                                                        <path  data-name="Path 237" d="M967.495,353.678h-2.3v8.253h-3.437v-8.253H960.13V350.77h1.624v-1.888a4.087,4.087,0,0,1,.264-1.492,2.9,2.9,0,0,1,1.039-1.379,3.626,3.626,0,0,1,2.153-.6l2.549.019v2.833h-1.851a.732.732,0,0,0-.472.151.8.8,0,0,0-.246.642v1.719H967.8Z" transform="translate(-960.13 -345.407)" fill="currentColor"/>
-                                                    </svg>
-                                                    <span class="visually-hidden">Facebook</span>
-                                                </a>
-                                            </li>
-                                            <li class="team__social--list">
-                                                <a class="team__social--icon" target="_blank" href="{{ member.data.instagram }}">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.497" height="16.492" viewBox="0 0 19.497 19.492">
-                                                        <path  data-name="Icon awesome-instagram" d="M9.747,6.24a5,5,0,1,0,5,5A4.99,4.99,0,0,0,9.747,6.24Zm0,8.247A3.249,3.249,0,1,1,13,11.238a3.255,3.255,0,0,1-3.249,3.249Zm6.368-8.451A1.166,1.166,0,1,1,14.949,4.87,1.163,1.163,0,0,1,16.115,6.036Zm3.31,1.183A5.769,5.769,0,0,0,17.85,3.135,5.807,5.807,0,0,0,13.766,1.56c-1.609-.091-6.433-.091-8.042,0A5.8,5.8,0,0,0,1.64,3.13,5.788,5.788,0,0,0,.065,7.215c-.091,1.609-.091,6.433,0,8.042A5.769,5.769,0,0,0,1.64,19.341a5.814,5.814,0,0,0,4.084,1.575c1.609.091,6.433.091,8.042,0a5.769,5.769,0,0,0,4.084-1.575,5.807,5.807,0,0,0,1.575-4.084c.091-1.609.091-6.429,0-8.038Zm-2.079,9.765a3.289,3.289,0,0,1-1.853,1.853c-1.283.509-4.328.391-5.746.391S5.28,19.341,4,18.837a3.289,3.289,0,0,1-1.853-1.853c-.509-1.283-.391-4.328-.391-5.746s-.113-4.467.391-5.746A3.289,3.289,0,0,1,4,3.639c1.283-.509,4.328-.391,5.746-.391s4.467-.113,5.746.391a3.289,3.289,0,0,1,1.853,1.853c.509,1.283.391,4.328.391,5.746S17.855,15.705,17.346,16.984Z" transform="translate(0.004 -1.492)" fill="currentColor"/>
-                                                    </svg>
-                                                    <span class="visually-hidden">Instagram</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        {%- endfor -%}
+        <!-- Start banner section -->
+        <section class="banner__section banner__style2 section--padding color-scheme-2">
+            <div class="section__heading text-center mb-35">
+                <h2 class="">قطع أناقتك عند إلياس</h2>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g2.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g3.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 mt-3 col-md-6">
+                        <a href="/suit"><img src="/assets/img/g4.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g5.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g6.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g7.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g8.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g9.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g10.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g11.png" alt=""></a>
+                    </div>
+                     <div class="col-lg-3 mt-3 col-md-6">
+                        <a href=""><img src="/assets/img/g12.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End team members section -->
+        <!-- End banner section -->

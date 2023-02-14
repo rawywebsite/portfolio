@@ -2,57 +2,18 @@
 <html lang="en">
 <body>
 
-    <div class='progress' id='preLoaderbar'>
-        <div class='indeterminate'></div>
-    </div>
-
     {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
 
-    <!-- jquery -->
-    <script src="/assets/js/jquery-2.2.4.min.js"></script>
-    <!-- popper -->
-    <script src="/assets/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <!-- magnific popup -->
-    <script src="/assets/js/jquery.magnific-popup.js"></script>
-    <!-- wow -->
-    <script src="/assets/js/wow.min.js"></script>
-    <!-- owl carousel -->
-    <script src="/assets/js/owl.carousel.min.js"></script>
-    <!-- waypoint -->
-    <script src="/assets/js/waypoints.min.js"></script>
-    <!-- counterup -->
-    <script src="/assets/js/jquery.counterup.min.js"></script>
-    <!-- imageloaded -->
-    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- isotope -->
-    <script src="/assets/js/isotope.pkgd.min.js"></script>
+     <!-- All Script JS Plugins here  -->
+    <script src="/assets/js/vendor/popper.js" defer="defer"></script>
+    <script src="/assets/js/vendor/bootstrap.min.js" defer="defer"></script>
+    <script src="/assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/assets/js/plugins/glightbox.min.js"></script>
 
-    <script src="/assets/js/jquery.datetimepicker.full.min.js"></script>
-
-    <script src="/assets/js/countdown.js"></script>
-    <!-- slick -->
-    <script src="/assets/js/slick.min.js"></script>
-    <!-- Datepicker -->
-    <script src="/assets/js/datepicker.min.js"></script>
-    <script src="/assets/js/datepicker-en.js"></script>
-    <!-- Cookie -->
-    <script src="/assets/js/cookiealert.js"></script>
-    
-     <!-- main js -->
-    <script src="/assets/js/main.js"></script>
-    <script>
-        //<![CDATA[
-        document.onreadystatechange = function () {
-                    if (document.readyState === "complete") {
-                        console.log(document.readyState);
-                        document.getElementById("preLoaderbar").style.display = "none";
-                    }
-                }
-        //]]></script>
+    <!-- Customscript js -->
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
