@@ -7020,18 +7020,6 @@ input[type=number]::-webkit-outer-spin-button {
     pointer-events: none
 }
 
-@media only screen and (max-width:767px) {
-    .footer__widget--button {
-        visibility: visible
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .footer__widget--inner {
-        display: none
-    }
-}
-
 .newsletter__subscribe {
     margin-top: 2rem
 }
