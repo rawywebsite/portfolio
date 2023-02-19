@@ -4,6 +4,29 @@ backend:
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
 collections:
+  - name: "suit"
+    label: "Suit"
+    folder: "src/suit"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["suits"] }
+      - { label: "Black Image", name: "imageBlack", widget: "image" }
+      - { label: "Blue Image", name: "imageBlue", widget: "image" }
+      - { label: "Formal Image", name: "imageCol1", widget: "image" }
+      - { label: "Classic Image", name: "imageCol2", widget: "image" }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/portfolio"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["portfolio"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
   - name: "people"
     label: "People"
     folder: "src/people"

@@ -6,7 +6,8 @@ tags: "suits"
 imageBlack: /assets/img/pro1.jpg
 imageAlt: This is a test
 imageBlue: /assets/img/pro4.jpg
-imageCol: /assets/img/sun.png
+imageCol1: /assets/img/test6.png
+imageCol2: /assets/img/test6.png
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 ---
 
