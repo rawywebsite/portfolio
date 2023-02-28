@@ -11,6 +11,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["suits"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -26,6 +27,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["bebeons"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
