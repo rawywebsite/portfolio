@@ -268,10 +268,11 @@ layout: 'base.njk'
         <!-- End product details section -->
 
 <!-- Start shop cards section -->
-        <section class="shop__card--section section--padding color-scheme-2">
+{% if imageCol1 %}
+          <section class="shop__card--section color-scheme-2">
             <div class="container-fluid">
                 <div class="shop__card--section__inner">
-                    <div dir="rtl" class="row row-cols-md-2 row-cols-1 align-items-center">
+                    <div class="row row-cols-md-2 row-cols-1 align-items-center">
                         <div class="col col-sm-order">
                             <div class="shop__card--content">
                                 <h2 class="shop__card--content__maintitle mb-12">البدلة في الشكل الكلاسيك
@@ -286,10 +287,12 @@ layout: 'base.njk'
                 </div>
             </div>
         </section>
+{% endif %}
 <!-- End shop cards section -->
 
 <!-- Start shop cards section -->
-        <section class="shop__card--section color-scheme-2">
+{% if imageCol2 %}
+          <section class="shop__card--section color-scheme-2">
             <div class="container-fluid">
                 <div class="shop__card--section__inner">
                     <div class="row row-cols-md-2 row-cols-1 align-items-center">
@@ -307,5 +310,7 @@ layout: 'base.njk'
                 </div>
             </div>
         </section>
+{% endif %}
+      
 <!-- End shop cards section -->
 </main>
