@@ -43,6 +43,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["belts"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -58,6 +59,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blazers"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -73,6 +75,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["boots"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -88,6 +91,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["cufflinks"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -103,6 +107,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["highnecks"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -118,6 +123,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["shirts"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -133,6 +139,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["shoeses"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -148,6 +155,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["ties"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -163,6 +171,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["trouserss"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -178,6 +187,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["watches"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -228,6 +238,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["product"] }
       - { label: "Black Image", name: "imageBlack", widget: "image" }
@@ -243,6 +254,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
