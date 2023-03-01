@@ -254,11 +254,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Author Image", name: "imageAuthor", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
