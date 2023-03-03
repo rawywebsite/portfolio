@@ -11,6 +11,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["suits"] }
@@ -27,6 +28,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["bebeons"] }
@@ -43,6 +45,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["belts"] }
@@ -59,6 +62,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blazers"] }
@@ -75,6 +79,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["boots"] }
@@ -91,6 +96,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["cufflinks"] }
@@ -107,6 +113,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["highnecks"] }
@@ -139,6 +146,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["shoeses"] }
@@ -155,6 +163,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["ties"] }
@@ -171,6 +180,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["trouserss"] }
@@ -187,6 +197,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["watches"] }
@@ -238,6 +249,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Branch", name: "branch", widget: "string" }
       - { label: "Price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["product"] }
