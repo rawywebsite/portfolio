@@ -4,6 +4,6 @@ tags:
   - team
 imageAlt: عبدالله جمال - مدير فرع عباس عقاد لبراند إلياس
 text: عبدالله جمال - مدير فرع مدينة نصر
-facebook: https://drive.google.com/drive/folders/10PlBDBXm2ZLCqKmlfv70eP8Z4zjLjyYK?usp=sharing
+facebook: fb
 instagram: ins
 ---
