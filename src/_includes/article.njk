@@ -215,7 +215,7 @@ layout: 'base.njk'
                                     <p class="blog__post--meta"> {{date | postDate}} </p>                                     
                                 </div>
                                 <div class="blog__thumbnail mb-30">
-                                    <img class="blog__thumbnail--img border-radius-10" src="{{image}}" alt="blog-img">
+                                    <img class="blog__thumbnail--img border-radius-10" src="{{image}}" alt="{{ imageAlt }}">
                                 </div>
                                 <div class="blog__details--content">
                                     {{ content | safe }}
