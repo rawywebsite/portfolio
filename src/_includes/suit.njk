@@ -10,7 +10,7 @@ layout: 'base.njk'
     <link rel=icon href="/assets/img/favicon-32x32.png" type="image/png">
     <meta
       name="description"
-      content="{{ title }} - إلياس رائد في تصميم أزياء الرجال تسوق ألان أفضل البدل الموجودة في السوق المصري من إلياس - أجعل مناسبتك مختلفة"
+      content="{{ description }} إلياس رائد في تصميم أزياء الرجال تسوق ألان أفضل البدل الموجودة في السوق المصري من إلياس - أجعل مناسبتك مختلفة "
     />
     <meta
       name="keywords"
@@ -20,31 +20,31 @@ layout: 'base.njk'
     <meta name="secound-theme-color" content="#b1bfdb" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
-    <meta name="apple-mobile-web-app-title" content={{ title }} />
+    <meta name="apple-mobile-web-app-title" content="{{ title }}" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="apple-touch-icon" href="/assets/img/logo.jpg" />
     <link rel="apple-touch-icon-precomposed" href="/assets/img/logo.jpg" />
-    <meta name="application-name" content={{ title }} />
-    <meta name="title" content={{ title }} />
+    <meta name="application-name" content="{{ title }}" />
+    <meta name="title" content="{{ title }}" />
     <meta
       name="robots"
       content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={{ title }} />
-    <meta property="og:title" content={{ title }} />
-    <meta property="og:description" content={{ title }} />
+    <meta property="og:site_name" content="{{ title }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ title }}" />
     <meta property="og:url" content="https://www.elias-designer.com/" />
     <meta property="og:image" content="https://i.ibb.co/NrZX8bT/logo.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ELIAS" />
     <meta name="twitter:creator" content="@ELIAS" />
     <meta name="twitter:title" content="@ELIAS" />
-    <meta name="twitter:description" content={{ title }} />
+    <meta name="twitter:description" content="الصفحة الرئيسية لموقع بدل إلياس" />
     <meta name="twitter:image:src" content="/assets/img/logo.jpg" />
     <meta name="note" content="بدل إلياس" />
-    <meta name="subject" content={{ title }} />
+    <meta name="subject" content="الصفحة الرئيسية لموقع بدل إلياس" />
     <meta name="identifier-URL" content="https://www.elias-designer.com/" />
     <meta name="linkage" content="https://www.elias-designer.com/" />
     <meta name="distribution" content="global" />
@@ -82,6 +82,23 @@ layout: 'base.njk'
         gtag('js', new Date());
         gtag('config', 'G-RLD92GFJKH');
     </script>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '231945542546037');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
     <!-- Start header area -->
@@ -107,10 +124,6 @@ layout: 'base.njk'
                                 </li>
                                 <li class="header__menu--items">
                                     <a class="header__menu--link" href="/elias-and-the-stars">إلياس والنجوم 
-                                    </a>
-                                </li>
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="/team">الفريق 
                                     </a>
                                 </li>
                                 <li class="header__menu--items d-none d-xl-block">
@@ -146,6 +159,19 @@ layout: 'base.njk'
                                         <li class="header__sub--menu__items"><a href="/branches" class="header__sub--menu__link">فروع براند إلياس</a></li>
                                     </ul>
                                 </li>
+                                 <li class="header__menu--items mr-3 d-none d-xl-block">
+                                    <a class="header__menu--link" href="#"> العربية <img src="/assets/img/arabic.webp" alt="بدل إلياس - صورة اللغة العربية"></a>
+                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                        <path  d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
+                                    </svg>
+                                    </a>
+                                    <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items">
+                                            <a href="https://en.elias-designer.com" class="header__sub--menu__link"> English <img src="/assets/img/english.webp" alt="بدل إلياس - صورة اللغة الانجليزية"></a>
+                                            <a href="/" class="header__sub--menu__link"> العربية <img src="/assets/img/arabic.webp" alt="بدل إلياس - صورة اللغة العربية"></a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -172,7 +198,6 @@ layout: 'base.njk'
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/">الرئيسية</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/about">عن إلياس</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/elias-and-the-stars">إلياس والنجوم</a></li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/team">الفريق</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/portfolio">معرض الصور والفديوهات</a></li>
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="/product">منتجاتنا</a>
@@ -190,9 +215,15 @@ layout: 'base.njk'
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/blogs">مقالات تهمك</a></li>
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="/contact">تواصل معنا</a>
-                            <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="/branches" class="offcanvas__sub_menu_item">فروعنا</a></li>
-                            </ul>
+                        </li>
+                         <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="/branches">فروعنا</a>
+                        </li>
+                         <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="/team">الفريق</a>
+                        </li>
+                         <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="https://en.elias-designer.com">English <img src="/assets/img/english.webp" alt="بدل إلياس - صورة اللغة الانجليزية"></a></a>
                         </li>
                     </ul>
                 </nav>
