@@ -304,13 +304,12 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
         <section class="shop__card--section section--padding color-scheme-2">
             <div class="container-fluid">
                 <div class="shop__card--section__inner">
-                    <div dir="rtl" class="row row-cols-md-2 row-cols-1 align-items-center">
-                        <div class="col col-sm-order">
-                            <div class="shop__card--content">
-                                <h2 class="shop__card--content__maintitle mb-12">شوف البدلة في أوضاع مختلفة
-                                </h2>
+                    <div dir="rtl" class="row row-cols-md-2 row-cols-1 align-items-center justify-content-center">
+                        {% if imageCol1 != imageCol2 %}
+                            <div class="col">
+                                <img src="{{ imageCol2 }}" alt="{{ imageAlt }}">
                             </div>
-                        </div>
+                        {% endif %}
                         <div class="col">
                             <img src="{{ imageCol1 }}" alt="{{ imageAlt }}">
                         </div>
