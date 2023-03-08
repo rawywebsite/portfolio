@@ -4,6 +4,7 @@ description: مشاركة “إلياس” في مهرجان VIP Festival - إل
 date: 2023-03-08T02:21:19.600Z
 tags:
   - post
+  - featured
 image: /assets/blog/received_1469313243534109.jpeg
 imageAlt: مشاركة “إلياس” في مهرجان VIP Festival - إلياس للبدل
 ---
