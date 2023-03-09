@@ -256,6 +256,20 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
                                             </div>
                                         </div>
                                     {% endif %}
+                                    {% if imageBlack != imageCol1 %}
+                                         <div class="swiper-slide">
+                                            <div class="product__media--preview__items">
+                                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ imageCol1 }}"><img class="product__media--preview__items--img" src="{{ imageCol1 }}" alt="{{ imageAlt }}"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                     {% if imageBlue != imageCol2 %}
+                                         <div class="swiper-slide">
+                                            <div class="product__media--preview__items">
+                                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ imageCol2 }}"><img class="product__media--preview__items--img" src="{{ imageCol2 }}" alt="{{ imageAlt }}"></a>
+                                            </div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div>
                             <div class="product__media--nav swiper">
@@ -271,6 +285,20 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
                                         <div class="swiper-slide">
                                             <div class="product__media--nav__items">
                                                 <img class="product__media--nav__items--img" src="{{ imageBlue }}" alt="{{ imageAlt }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                     {% if imageBlack != imageCol1 %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--nav__items">
+                                                <img class="product__media--nav__items--img" src="{{ imageCol1 }}" alt="{{ imageAlt }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                     {% if imageBlue != imageCol2 %}
+                                        <div class="swiper-slide">
+                                            <div class="product__media--nav__items">
+                                                <img class="product__media--nav__items--img" src="{{ imageCol2 }}" alt="{{ imageAlt }}">
                                             </div>
                                         </div>
                                     {% endif %}
