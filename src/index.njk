@@ -133,7 +133,7 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
                                     </a>
                                 </li>
                                 <li class="header__menu--items d-none d-xl-block">
-                                    <a class="header__menu--link" href="/portfolio">معرض الصور والفديوهات </a>
+                                    <a class="header__menu--link" href="/portfolio">معرض الصور </a>
                                 </li>
                                 <li class="header__menu--items">
                                     <a class="header__menu--link" href="/product">منتجاتنا 
@@ -242,24 +242,61 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
 <main class="main__content_wrapper">
     <!-- Start banner section -->
 <style>
-    #myVideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  width: 100%; 
-  min-height: 40vh;
-  height: 86vh;
-object-fit: cover;
+    .br-10 {
+    border-radius: 10px;
+    }
+@media screen and (min-width: 1200px){
+.pd0 {
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+}
+}
+@media screen and (max-width: 1200px){
+    .pd1 {
+    display: none;
+}
+}
+    .pd1 {
+    padding-right: 1rem !important;
+    padding-left: 20px !important;
 }
 </style>
-<video class="vid wow animate__animated animate__fadeIn" autoplay muted loop id="myVideo">
-  <source src="/assets/rain.webm" type="video/webm">
-  Your browser does not support HTML5 video.
-</video>
-<!-- Start slider section -->
- <section class="hero__slider--section color-scheme-2 banner-dis">
+
+<div class="row">
+                        
+                        <div class="col-6 col-md-3 col-sm-6 pd1 wow animate__animated animate__fadeIn">
+                            <div class="shop__card--banner position__relative d-flex">
+                                <div class="shop__card--banner__thumbnail one">
+                                    <a class="display-block" href="/suit">
+                                        <img class="shop__card--banner__thumbnail--img display-block" src="/assets/img/fr.webp" alt="تسوق جميع البدل - براند إلياس للبدل"></a>
+                                </div>
+                            </div>
+                            <div class="shop__card--banner position__relative d-flex">
+                                <div class="shop__card--banner__thumbnail one">
+                                    <a class="display-block" href="/blogs">
+                                        <img class="shop__card--banner__thumbnail--img display-block" src="/assets/img/f2.webp" alt="مقالات تهمك - براند إلياس للبدل"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-9 col-sm-12 pd0 wow animate__animated animate__fadeIn">
+                             <section class="hero__slider--section color-scheme-2">
             <div class="hero__slider--inner hero__slider--activation swiper">
                 <div class="hero__slider--wrapper swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="hero__slider--items">
+                            <img src="/assets/img/mobile-ar/b7.webp" alt="الفنان محمد عز متألق ب بدلة إلياس - صمم أزيائك الأن عند إلياس">
+                        </div>
+                    </div>
+                     <div class="swiper-slide ">
+                        <div class="hero__slider--items">
+                            <img src="/assets/img/mobile-ar/b5.webp" alt="الفنان محمد عز متألق ب بدلة إلياس - صمم أزيائك الأن عند إلياس">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="hero__slider--items">
+                            <img src="/assets/img/mobile-ar/b6.webp" alt="الفنان محمد عز متألق ب بدلة إلياس - صمم أزيائك الأن عند إلياس">
+                        </div>
+                    </div>
                     <div class="swiper-slide ">
                         <div class="hero__slider--items">
                             <img src="/assets/img/mobile-ar/2.webp" alt="الفنان محمد عز متألق ب بدلة إلياس - صمم أزيائك الأن عند إلياس">
@@ -285,7 +322,8 @@ object-fit: cover;
                 <div class="swiper__nav--btn swiper-button-prev"></div>
             </div>
         </section>
-        <!-- End banner section -->
+                        </div>
+                    </div>
 
         <!-- Start shop cards section -->
         <section class="shop__card--section section--padding color-scheme-2">
@@ -329,17 +367,29 @@ object-fit: cover;
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 col-lg-3 mt-3 col-md-6 wow animate__animated animate__fadeIn">
-                        <a href="/shoes"><img src="/assets/img/g2.webp" alt="تسوق جميع احذية براند إلياس للبدل"></a>
+                    <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/suit"><img class="br-10" src="/assets/img/5.webp" alt="تسوق جميع احذية براند إلياس للبدل"></a>
+                        <a href="/suit">بدل تركي</a>
                     </div>
-                    <div class="col-6 col-lg-3 mt-3 col-md-6 wow animate__animated animate__fadeIn">
-                        <a href="/shirt"><img src="/assets/img/g3.webp" alt="تسوق جميع قمصان براند إلياس للبدل"></a>
+                    <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/trousers"><img class="br-10" src="/assets/img/6.webp" alt="تسوق جميع قمصان براند إلياس للبدل"></a>
+                        <a href="/trousers">بناطيل إلياس</a>
                     </div>
-                    <div class="col-6 col-lg-3 mt-3 col-md-6 wow animate__animated animate__fadeIn">
-                        <a href="/high-neck"><img src="/assets/img/g5.webp" alt="تسوق جميع الهاي كول براند إلياس للبدل"></a>
+                    <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/blazer"><img class="br-10" src="/assets/img/7.webp" alt="تسوق جميع الهاي كول براند إلياس للبدل"></a>
+                        <a href="/blazer">بليزر</a>
                     </div>
-                    <div class="col-6 col-lg-3 mt-3 col-md-6 wow animate__animated animate__fadeIn">
-                        <a href="/tie"><img src="/assets/img/g6.webp" alt="تسوق جميع ربطات العنق براند إلياس للبدل"></a>
+                    <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/watch"><img class="br-10" src="/assets/img/8.webp" alt="تسوق جميع ربطات العنق براند إلياس للبدل"></a>
+                        <a href="/watch">ساعة</a>
+                    </div>
+                     <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/bebeon"><img class="br-10" src="/assets/img/9.webp" alt="تسوق جميع ربطات العنق براند إلياس للبدل"></a>
+                        <a href="/bebeon">بيبيون</a>
+                    </div>
+                     <div class="col-4 text-center mt-3 col-md-2 wow animate__animated animate__fadeIn">
+                        <a href="/shoes"><img class="br-10" src="/assets/img/10.webp" alt="تسوق جميع ربطات العنق براند إلياس للبدل"></a>
+                        <a href="/shoes">حذاء</a>
                     </div>
                     <div class="col-12 text-center mt-elias">
                         <a href="/product"><button class="elias-btn  btn-light">جميع المنتجات</button></a>
@@ -378,27 +428,6 @@ object-fit: cover;
             </div>
         </section>
         <!-- End product section -->
-
-
-        <section class="testimonial__section bg__gray--color">
-            <div class="container-fluid">
-                 <div class="section__heading text-center mb-40">
-                    <h2 class="section__heading--maintitle style2">مشاهير عند إلياس</h2>
-                </div>
-                <div class="testimonial__section--inner testimonial__swiper--activation swiper swiper-initialized swiper-horizontal swiper-pointer-events">
-                    <div class="swiper-wrapper" id="swiper-wrapper-ac8ea668410fb1450" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1921.33px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 600px; margin-right: 30px;" role="group" aria-label="2 / 4">
-                        </div>
-                        {%- for image in collections.images | reverse -%}
-                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="{{ loop.index0 }}" style="width: 600px; margin-right: 30px;" role="group" aria-label="{{ loop.index }} / 4">
-                                <div>
-                                    <img class="testimonial__items--thumbnail__img" src="{{image.data.image}}" alt="{{image.data.imageAlt}}">
-                                </div>
-                            </div>
-                        {%- endfor -%}
-                    <div class="testimonial__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-            </div>
-        </section>
 
         <!-- Start blog section -->
         <section class="blog__section section--padding color-scheme-2 pt-0">
