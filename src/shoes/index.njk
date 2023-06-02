@@ -246,7 +246,7 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
         <section class="product__section section--padding color-scheme-2 pt-0">
             <div class="container-fluid">
                 <div class="product__section--inner">
-                    <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
+                    <div class="row row-cols-xl-4 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
                         {% if collections.shoeses %}
                             {%- for shoes in collections.shoeses | reverse -%}
                         <div class="col mb-30">
@@ -256,63 +256,6 @@ src="https://www.facebook.com/tr?id=231945542546037&ev=PageView&noscript=1"
                                         <img class="product__items--img product__primary--img" src="{{shoes.data.imageBlack}}" alt="{{ shoes.data.imageAlt }}">
                                         <img class="product__items--img product__secondary--img" src="{{shoes.data.imageBlue}}" alt="{{ shoes.data.imageAlt }}">
                                     </a>
-                                    <a class="product__add-to__cart--btn__style2"  data-open="modal{{ shoes.url }}">
-                                        <span class="add__to--cart__text"> نظرة سريعة </span>
-                                    </a>
-                                        <!-- Quickview Wrapper -->
-    <div class="modal color-scheme-2" id="modal{{ shoes.url }}" data-animation="slideInUp">
-        <div class="modal-dialog quickview__main--wrapper">
-            <header class="modal-header quickview__header">
-                <button class="close-modal quickview__close--btn" aria-label="close modal" data-close>✕ </button>
-            </header>
-            <div class="quickview__inner">
-                <div dir="rtl" class="row row-cols-lg-2 row-cols-md-2">
-                    <div class="col">
-                        <div class="quickview__product--media product__details--media">
-                            <div class="product__media--preview  swiper">
-                                <div class="swiper-wrapper">
-                                    {% if shoes.data.imageBlack %}
-                                        <div class="swiper-slide">
-                                            <div class="product__media--preview__items">
-                                                <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="{{ shoes.data.imageBlack }}"><img class="product__media--preview__items--img" src="{{ shoes.data.imageBlack }}" alt="product-media-img"></a>
-                                            </div>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            </div>
-                            <div class="product__media--nav swiper">
-                                <div class="swiper-wrapper">
-                                    {% if shoes.data.imageBlack %}
-                                        <div class="swiper-slide">
-                                            <div class="product__media--nav__items">
-                                                <img class="product__media--nav__items--img" src="{{ shoes.data.imageBlack }}" alt="{{ shoes.data.imageAlt }}">
-                                            </div>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                                <div class="swiper__nav--btn swiper-button-next"></div>
-                                <div class="swiper__nav--btn swiper-button-prev"></div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col">
-                        <div dir='rtl' class="product__details--info">
-                            <form action="#">
-                                <h2 class="product__details--info__title mb-15">{{ shoes.data.title }}</h2>
-                                <div class="product__details--info__price mb-10">
-                                    <span class="current__price">{{ shoes.data.price }}</span>
-                                </div>
-                                <p class="product__details--info__desc mb-15">{{ shoes.data.description | safe }}</p>
-                                <span class="product__badge--items sale">متواجد في فرع : مدينة نصر</span>
-                                <span class="product__badge--items sale">01125656778</span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quickview Wrapper End -->
                                 </div>
                                 <div class="product__items--content text-center">
                                     <h3 class="product__items--content__title h4"><a href="{{ shoes.url }}">{{shoes.data.title}}</a></h3>
